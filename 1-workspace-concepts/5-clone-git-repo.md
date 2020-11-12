@@ -5,8 +5,7 @@ For the following parts of the workshop, you are going to work on the Notebook V
 1. To get started, first navigate to the JupyterLab instance running on the Notebook VM by clicking on the JupyterLab link shown below:
 ![](computes_view.png)
 
-1. After going through authentication, you will see the JupyterLab frontend. As you authenticate, make sure to use the same user to log in as was used to create the Notebook VM, or else your access will be denied. Next open an Terminal (either by File/New/Terminal, or by just clicking on Terminal in the Launcher Window).
-![](terminal.png)
+1. If you can see the Git icon on the left menu bar, click on the Extension Manager icon (the puzzle piece one), enable it clicking on the button and then 
 
 1. In the terminal window clone this repository by typing:
 ```

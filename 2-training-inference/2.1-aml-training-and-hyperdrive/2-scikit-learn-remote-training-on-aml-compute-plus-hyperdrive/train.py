@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import joblib
 import sklearn
 from sklearn.model_selection import train_test_split
@@ -52,7 +53,7 @@ parser.add_argument('--l1_ratio', type=float, default=0.5,
 
 args, leftovers = parser.parse_known_args()
 # args = parser.parse_args()
-    
+
 print('Loading dataset')
 if(run.id.startswith("OfflineRun")):
     ws = Workspace.from_config()
@@ -98,7 +99,7 @@ categorical = []
 for col, value in attritionXData.iteritems():
     if value.dtype == 'object':
         categorical.append(col)
-        
+
 # Collect the numerical column names in separate list
 numerical = attritionXData.columns.difference(categorical)
 
@@ -147,6 +148,10 @@ print('Training the model')
 # preprocess the data and train the classification model
 trained_model = model_pipeline.fit(x_train, y_train)
 
+# write the model out (placed into /outputs) as a pickle file for later external usage
+model_file_name = 'classif-empl-attrition.pkl'
+joblib.dump(value=trained_model, filename=os.path.join(OUTPUT_DIR, model_file_name))
+
 
 # +
 # Calculate performance metrics for x_test
@@ -172,9 +177,7 @@ run.log("Avg Precision", float(average_precision))
 cm = confusion_matrix(y_test, y_predictions)
 print(cm)
 
-# Save model as -pkl file to the outputs/ folder to use outside the script
-model_file_name = 'classif-empl-attrition.pkl'
-joblib.dump(value=trained_model, filename=os.path.join(OUTPUT_DIR, model_file_name))
+run.complete()
 
 
 if not is_remote_run:
