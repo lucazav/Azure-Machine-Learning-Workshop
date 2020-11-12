@@ -1,0 +1,95 @@
+2020-11-12 16:11:14.903 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: GetOutput
+2020-11-12 16:11:14.909 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: GetOutput
+2020-11-12 16:11:14.921 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: GetChildren
+2020-11-12 16:11:24.136 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - memory usage 902713344
+2020-11-12 16:11:24.136 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - child memory usage 1039912960
+2020-11-12 16:11:24.137 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - cpu time 87.507029
+2020-11-12 16:11:24.137 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - child cpu time 311.698695
+2020-11-12 16:11:34.184 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - memory usage 903430144
+2020-11-12 16:11:34.184 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - child memory usage 1040629760
+2020-11-12 16:11:34.184 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - cpu time 88.310981
+2020-11-12 16:11:34.185 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - child cpu time 311.698695
+2020-11-12 16:11:44.229 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - memory usage 903905280
+2020-11-12 16:11:44.229 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - child memory usage 1041104896
+2020-11-12 16:11:44.229 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - cpu time 88.913455
+2020-11-12 16:11:44.229 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - child cpu time 311.698695
+2020-11-12 16:11:54.274 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - memory usage 903974912
+2020-11-12 16:11:54.274 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - child memory usage 1041182720
+2020-11-12 16:11:54.275 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - cpu time 89.46303
+2020-11-12 16:11:54.275 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - child cpu time 311.698695
+2020-11-12 16:11:56.839 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=GetChildren, HowEnded=Success, Duration=41917.76[ms]
+2020-11-12 16:11:56.839 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=41930.57[ms]
+2020-11-12 16:11:56.852 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: DownloadModel
+2020-11-12 16:11:57.474 - INFO - 73347 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping enabled: False
+2020-11-12 16:11:57.474 - INFO - 73347 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping timeout: 86400
+2020-11-12 16:11:57.538 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=DownloadModel, HowEnded=Success, Duration=685.88[ms]
+2020-11-12 16:11:57.538 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=42635.37[ms]
+2020-11-12 16:11:57.538 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.load:229 - Loading from file cache
+2020-11-12 16:11:57.539 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:46 - ActivityStarted: load
+2020-11-12 16:11:57.539 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:263 - Loading the saved_as object from cache.
+2020-11-12 16:11:57.642 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:266 - The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-12 16:11:57.681 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:70 - ActivityCompleted: Activity=load, HowEnded=Success, Duration=142.11[ms]
+2020-11-12 16:11:57.682 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:46 - ActivityStarted: get
+2020-11-12 16:11:57.683 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: dataset_cached_keys
+2020-11-12 16:11:57.707 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:70 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=25.19[ms]
+2020-11-12 16:11:57.707 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:46 - ActivityStarted: get
+2020-11-12 16:11:57.708 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: train CV splits
+2020-11-12 16:11:57.725 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized train CV splits
+2020-11-12 16:11:57.746 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X
+2020-11-12 16:11:57.772 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y
+2020-11-12 16:11:57.790 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: class_labels
+2020-11-12 16:11:57.808 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:70 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=100.99[ms]
+2020-11-12 16:11:57.808 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_perform_best_run_explain_model:81 - Computing model explanations for best run AutoML_93a6946f-2fe6-4cdb-b934-c6c68e178533_30 on local
+2020-11-12 16:11:57.809 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver_factory._get_model_explain_driver:58 - Constructing model explain config for classification
+2020-11-12 16:11:57.810 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_auto_mode_explain_model:138 - The dependent model explainability packages are:- {"azureml-train-automl-runtime": "1.17.0", "azureml-interpret": "1.17.0", "interpret-community": "0.15.3", "interpret-core": "0.2.1"}
+2020-11-12 16:11:59.299 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_helper._check_model_explain_packages:155 - All dependent explainability packages are importable
+2020-11-12 16:11:59.300 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_auto_mode_explain_model:150 - [RunId:AutoML_93a6946f-2fe6-4cdb-b934-c6c68e178533_30]Start auto mode model explanations
+2020-11-12 16:11:59.554 - INFO - 73347 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping enabled: False
+2020-11-12 16:11:59.554 - INFO - 73347 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping timeout: 86400
+2020-11-12 16:11:59.574 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver._rehydrate_automl_fitted_model:100 - Successfully downloaded and loaded the model for explanations
+2020-11-12 16:11:59.586 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.setup_model_explain_train_data:87 - Data preparation for model explanations completed.
+2020-11-12 16:11:59.586 - INFO - 73347 - azureml.train.automl.runtime.automl_explain_utilities._get_unique_classes:700 - Got class labels from the AutoML estimator
+2020-11-12 16:11:59.587 - INFO - 73347 - azureml.train.automl.runtime.automl_explain_utilities._get_unique_classes:713 - The number of unique classes in training data are 2
+2020-11-12 16:11:59.587 - INFO - 73347 - azureml.train.automl.runtime.automl_explain_utilities._automl_pick_surrogate_model_and_set_params:1001 - The number of core being set for explainable model is: 1
+2020-11-12 16:11:59.587 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.log_explanation_data_stats:167 - Dimensionality of initialization samples:- 1176 samples 295 features
+2020-11-12 16:11:59.587 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.log_explanation_data_stats:170 - Dimensionality of evaluation samples:- 1176 samples 295 features
+2020-11-12 16:12:04.364 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - memory usage 921722880
+2020-11-12 16:12:04.364 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - child memory usage 1059201024
+2020-11-12 16:12:04.365 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - cpu time 94.938948
+2020-11-12 16:12:04.366 - INFO - 73347 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - child cpu time 311.698695
+2020-11-12 16:12:08.193 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_auto_mode_explain_model:205 - Computation of engineered feature importance completed.
+2020-11-12 16:12:08.195 - INFO - 73347 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_auto_mode_explain_model:228 - [RunId:AutoML_93a6946f-2fe6-4cdb-b934-c6c68e178533_30]End auto mode model explanation
+2020-11-12 16:12:08.304 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:46 - ActivityStarted: get
+2020-11-12 16:12:08.304 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: dataset_cached_keys
+2020-11-12 16:12:08.409 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:70 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=104.79[ms]
+2020-11-12 16:12:08.818 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.load:229 - Loading from file cache
+2020-11-12 16:12:08.819 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:46 - ActivityStarted: load
+2020-11-12 16:12:08.824 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:263 - Loading the saved_as object from cache.
+2020-11-12 16:12:08.851 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:266 - The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-12 16:12:08.865 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:70 - ActivityCompleted: Activity=load, HowEnded=Success, Duration=45.65[ms]
+2020-11-12 16:12:08.865 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.unload:243 - Unloading from file cache
+2020-11-12 16:12:08.866 - INFO - 73347 - azureml.automl.runtime.shared.file_cache_store.remove_all:209 - Removing all items from cache store.
+2020-11-12 16:12:08.866 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:46 - ActivityStarted: remove_all
+2020-11-12 16:12:09.472 - INFO - 73347 - azureml.automl.runtime.shared.cache_store._log_activity:70 - ActivityCompleted: Activity=remove_all, HowEnded=Success, Duration=605.81[ms]
+2020-11-12 16:12:09.533 - INFO - 73347 - azureml.automl.core.systemusage_telemetry.stop:49 - Stopping usage telemetry collection
+2020-11-12 16:12:09.588 - INFO - 73347 - azureml.train.automl.runtime._runtime_client._fit_local:405 - Parent Run AutoML_93a6946f-2fe6-4cdb-b934-c6c68e178533 Complete.
+2020-11-12 16:21:53.445 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: GetOutput
+2020-11-12 16:21:53.451 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: GetOutput
+2020-11-12 16:21:53.476 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: GetChildren
+2020-11-12 16:22:36.824 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=GetChildren, HowEnded=Success, Duration=43347.69[ms]
+2020-11-12 16:22:36.824 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=43372.6[ms]
+2020-11-12 16:22:36.824 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: DownloadModel
+2020-11-12 16:22:37.458 - INFO - 73347 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping enabled: False
+2020-11-12 16:22:37.458 - INFO - 73347 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping timeout: 86400
+2020-11-12 16:22:37.493 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=DownloadModel, HowEnded=Success, Duration=668.62[ms]
+2020-11-12 16:22:37.493 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=44047.59[ms]
+2020-11-12 16:33:34.782 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: GetOutput
+2020-11-12 16:33:34.787 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: GetOutput
+2020-11-12 16:33:34.803 - INFO - 73347 - azureml.train.automl.run._log_activity:46 - ActivityStarted: GetChildren
+2020-11-12 16:34:20.580 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=GetChildren, HowEnded=Success, Duration=45777.3[ms]
+2020-11-12 16:34:20.793 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=46005.55[ms]
+2020-11-12 16:34:21.347 - INFO - 73347 - azureml.train.automl.run._log_activity:70 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=46565.7[ms]
+2020-11-12 18:11:22.969 - INFO - 73347 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping enabled: False
+2020-11-12 18:11:22.970 - INFO - 73347 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping timeout: 86400
+2020-11-12 18:11:40.909 - INFO - 73347 - azureml.automl.runtime.shared.memory_utilities._is_low_memory:208 - Total ram: 14683119616 bytes, Current Available memory: 5379825664 bytes. Low memory threshold: 0.5
+2020-11-12 18:12:23.811 - INFO - 73347 - azureml.automl.runtime.shared.memory_utilities._is_low_memory:208 - Total ram: 14683119616 bytes, Current Available memory: 5379178496 bytes. Low memory threshold: 0.5
