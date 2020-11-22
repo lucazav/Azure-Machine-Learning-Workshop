@@ -4,25 +4,25 @@ channels:
 dependencies:
 - python=3.6.2
 - pip:
-  - azureml-core==1.17.0
-  - azureml-defaults==1.17.0
-  - azureml-telemetry==1.17.0
-  - azureml-train-restclients-hyperdrive==1.17.0
-  - azureml-train-core==1.17.0
-  - azureml-widgets==1.17.0
-  - azureml-pipeline-core==1.17.0
-  - azureml-pipeline-steps==1.17.0
-  - azureml-opendatasets==1.17.0
-  - azureml-automl-core==1.17.0
-  - azureml-automl-runtime==1.17.0
-  - azureml-train-automl-client==1.17.0
-  - azureml-train-automl-runtime==1.17.0
-  - azureml-train-automl==1.17.0
-  - azureml-train==1.17.0
-  - azureml-sdk==1.17.0
-  - azureml-interpret==1.17.0
-  - azureml-tensorboard==1.17.0
-  - azureml-mlflow==1.17.0.post1
+  - azureml-core==1.18.0.post1
+  - azureml-defaults==1.18.0
+  - azureml-telemetry==1.18.0
+  - azureml-train-restclients-hyperdrive==1.18.0
+  - azureml-train-core==1.18.0
+  - azureml-widgets==1.18.0
+  - azureml-pipeline-core==1.18.0
+  - azureml-pipeline-steps==1.18.0
+  - azureml-opendatasets==1.18.0
+  - azureml-automl-core==1.18.0
+  - azureml-automl-runtime==1.18.0
+  - azureml-train-automl-client==1.18.0
+  - azureml-train-automl-runtime==1.18.0.post1
+  - azureml-train-automl==1.18.0
+  - azureml-train==1.18.0
+  - azureml-sdk==1.18.0
+  - azureml-interpret==1.18.0
+  - azureml-tensorboard==1.18.0
+  - azureml-mlflow==1.18.0
   - mlflow
   - sklearn-pandas
 - pandas
@@ -30,4 +30,4 @@ dependencies:
 - tqdm
 - scikit-learn
 - matplotlib
-name: azureml_7bf67aa1128aa919ec18e02447121ba3
+name: azureml_8fd3f9f199f53e0d69da685b735ef9f1

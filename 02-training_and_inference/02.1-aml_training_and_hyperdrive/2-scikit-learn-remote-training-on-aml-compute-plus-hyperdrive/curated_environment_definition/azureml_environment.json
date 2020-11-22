@@ -1,6 +1,6 @@
 {
     "name": "AzureML-Tutorial",
-    "version": "57",
+    "version": "59",
     "environmentVariables": {
         "EXAMPLE_ENV_VAR": "EXAMPLE_VALUE"
     },

@@ -1,7 +1,7 @@
-# Azure ML E2E Workshop
+# Azure Machine Learning Workshop
 
 ## Target Audience
-Anyone who wants a comprehensive E2E understanding of Azure ML.
+Anyone who wants a comprehensive understanding of Azure ML.
 
 ## Key Goals
 1.	Understand the product E2E

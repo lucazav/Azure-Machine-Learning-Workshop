@@ -1,4 +1,9 @@
 .ipynb_checkpoints
 
 **/*.pkl
-2-training-inference/2.1-aml-training-and-hyperdrive/2-scikit-learn-remote-training-on-aml-compute-plus-hyperdrive/70_driver_log.txt
+02-training_and_inference/02.1-aml_training_and_hyperdrive/1-scikit-learn-local-training-on-notebook-plus-aml-ds-and-log/outputs
+02-training_and_inference/02.1-aml_training_and_hyperdrive/2-scikit-learn-remote-training-on-aml-compute-plus-hyperdrive/70_driver_log.txt
+02-training_and_inference/02.1-aml_training_and_hyperdrive/2-scikit-learn-remote-training-on-aml-compute-plus-hyperdrive/classif-attrition-amlcompute
+02-training_and_inference/02.1-aml_training_and_hyperdrive/2-scikit-learn-remote-training-on-aml-compute-plus-hyperdrive/curated_environment_definition
+02-training_and_inference/02.1-aml_training_and_hyperdrive/2-scikit-learn-remote-training-on-aml-compute-plus-hyperdrive/custom_environment_definition
+

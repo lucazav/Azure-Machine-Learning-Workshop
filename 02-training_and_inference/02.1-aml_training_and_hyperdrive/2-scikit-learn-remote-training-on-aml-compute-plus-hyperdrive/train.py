@@ -22,8 +22,10 @@ from azureml.core import Run, Workspace, Experiment
 
 os.system('pip freeze')
 
-# If you would like to use Azure ML's tracking and metrics capabilities, you will have to add Azure ML code inside your training script:
-# In this train.py script we will log some metrics to our Azure ML run. To do so, we will access the Azure ML Run object within the script:
+# If you would like to use Azure ML's tracking and metrics capabilities,
+# you will have to add Azure ML code inside your training script.
+# In this train.py script we will log some metrics to our Azure ML run.
+# To do so, we will access the Azure ML Run object within the script.
 from azureml.core.run import Run
 run = Run.get_context()
 
@@ -37,11 +39,12 @@ print('The sklearn_pandas version is {}.'.format(sklearn_pandas.__version__))
 # Get Script Arguments for the hyper-parameters
 parser = argparse.ArgumentParser(description="Training Script")
 
-# LBFGS stands for Limited-memory Broyden–Fletcher–Goldfarb–Shanno. It approximates the second derivative matrix updates with gradient evaluations.
-# For more details about Logistic Regression solvers, take a look here: https://towardsdatascience.com/dont-sweat-the-solver-stuff-aea7cddc3451
 parser.add_argument('--C', type=float, default='1.0',
                     help='Inverse of regularization strength; must be a positive float. Like in support vector machines, smaller values specify stronger regularization.')
 
+# LBFGS stands for Limited-memory Broyden–Fletcher–Goldfarb–Shanno.
+# It approximates the second derivative matrix updates with gradient evaluations.
+# For more details about Logistic Regression solvers, take a look here: https://towardsdatascience.com/dont-sweat-the-solver-stuff-aea7cddc3451
 parser.add_argument('--solver', type=str, default='lbfgs',
                     help='Algorithm to use for the ML task')
 
@@ -51,13 +54,12 @@ parser.add_argument('--penalty', type=str, default='l2',
 parser.add_argument('--l1_ratio', type=float, default=0.5,
                     help='Used to specify the l1 ratio used in case of elasticnet penalty')
 
-args, leftovers = parser.parse_known_args()
-# args = parser.parse_args()
+args, unknownargs = parser.parse_known_args()
 
 print('Loading dataset')
 if(run.id.startswith("OfflineRun")):
     ws = Workspace.from_config()
-    experiment = Experiment(ws, "Train-Explain-Interactive")
+    experiment = Experiment(ws, "aml-wrkshp-remote-training-amlcompute")
     is_remote_run = False
     run = experiment.start_logging(outputs=None, snapshot_directory=".")
     attritionData = ws.datasets['IBM-Employee-Attrition'].to_pandas_dataframe()
