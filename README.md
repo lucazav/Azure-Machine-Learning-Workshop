@@ -5,46 +5,35 @@ Anyone who wants a comprehensive understanding of Azure ML.
 
 ## Key Goals
 1.	Understand the product E2E
-2.	Ensure that the work we are doing in Mn will address key gaps in usability / E2E user experience
-3.	Open bugs, fix docs & ensure commitments from product area leads on whether / how those bugs will be fixed
+2.	Get confident with the basis of the Azure ML Python SDK
 
 ## Agenda
 
-### Workspace Concepts: infra setup, ARM, workspace setup, computes, datastores, setup**
-1. [Set up your workspace and compute](./1-workspace-concepts/1-setup-compute.md)
-1. [Register a dataset](./1-workspace-concepts/2-dataset.md)
-1. [Run AutoML from the UI](./1-workspace-concepts/3-automl.md)
-1. [Compute Instance - Clone Git Repo](./1-workspace-concepts/5-clone-git-repo.md)
+### Workspace Concepts
+1. [Set up your workspace and compute](./01-workspace_concepts/01-setup_azure_machine_learning.md)
+2. [Register a dataset](./01-workspace_concepts/02-datasets_and_datastores.md)
+3. [Run AutoML from the UI](./01-workspace_concepts/03-automated_machine_learning.md)
+4. [Azure ML Designer](./01-workspace_concepts/04-azure_ml_designer.md)
+1. [Compute Instance - Clone Git Repo](./01-workspace_concepts/05-clone_git_repo.md)
 
 
-### Datasets, Model Training (AML, HyperDrive and AutoML), Model Inference**
+### Training and Logging 
 
-#### Notebooks to run and research:
+#### Azure ML Training & HyperDrive 
 
-AML training, HyperDrive and Interpretability:
-- [Notebook for plain vanilla Scikit-Learn model training in AML local compute (AML VM)](./2-training-inference/2.1-aml-training-and-hyperdrive/1-scikit-learn-local-training-on-notebook-plus-aml-ds-and-log/binayclassification-employee-attrition-notebook.ipynb)
-- [Notebook for Scikit-Learn model training in AML remote compute and HyperDrive](./2-training-inference/2.1-aml-training-and-hyperdrive/2-scikit-learn-remote-training-on-aml-compute-plus-hyperdrive/binayclassification-employee-attrition-aml-compute-notebook.ipynb) 
-- [Notebook for Model Interpretability in AML](./2-training-inference/2.2-aml-interpretability/1-simple-feature-transformations-explain-local.ipynb)
+1.	[Training of a classification model and interactive logging on Azure ML](./02-training_and_inference/02.1-aml_training_and_hyperdrive/1-scikit-learn-local-training-on-notebook-plus-aml-ds-and-log/binayclassification-employee-attrition-notebook.ipynb)
+2.	[Remote training via Azure ML Cluster](./02-training_and_inference/02.1-aml_training_and_hyperdrive/2-scikit-learn-remote-training-on-aml-compute-plus-hyperdrive/binayclassification-employee-attrition-aml-compute-notebook.ipynb)
 
-Automated ML:
-- [Notebook for AutoML local compute](./2-training-inference/2.1-aml-training-and-hyperdrive/2-scikit-learn-remote-training-on-aml-compute-plus-hyperdrive/binayclassification-employee-attrition-aml-compute-notebook.ipynb)
-- [Notebook for AutoML remote compute](./2-training-inference/2.1-aml-training-and-hyperdrive/2-scikit-learn-remote-training-on-aml-compute-plus-hyperdrive/binayclassification-employee-attrition-aml-compute-notebook.ipynb)
+### Azure ML Interpretability
 
-Pipelines & Batch Inference
-- [Use a model for batch inference](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/machine-learning-pipelines/parallel-run/tabular-dataset-inference-iris.ipynb)
+1. [Setup](./02-training_and_inference/02.2-aml_interpretability/00-setup.ipynb)
+2. [Explain binary classification model predictions locally](./02-training_and_inference/02.2-aml_interpretability/01-explain_model_predictions_locally.ipynb)
 
+### Training Using AutoML
 
-### MLOps (model management, deployment, inference, automation)
+1. [AutoML on Local Compute](./02-training_and_inference/02.3-automl_training/local-compute/01-binay_classification_employee_attrition_autoaml_local_compute.ipynb)
+2. [AutoML on Remote Compute](./02-training_and_inference/02.3-automl_training/remote-compute/02-binay_classification_employee_attrition_autoaml_remote_amlcompute.ipynb)
 
-#### **Tutorials for MLOps**
-- [Deploy a model](./3-mlops/deploy-attrition-model.ipynb)
-- [Automate training & deployment](./3-mlops/mlopsworkshop.md)
-- [Create automation workflow with EventGrid](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid#sample-scenarios)
+### Deploy the Model on an Azure Web Services
 
-### Enterprise Readiness
-- Azure Monitor https://docs.microsoft.com/en-us/azure/machine-learning/service/monitor-azure-machine-learning
-- RBAC https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-enterprise-security
-- https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-assign-roles
-- Limits service https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-manage-quotas
-- VNET https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-enable-virtual-network
-
+1. [Deploying a web service to Azure Container Instance (ACI) or Azure Kubernetes Services (AKS)](./02-training_and_inference/02.4-model_deployment/01-deploying_a_web_service_to_azure_container_instance.ipynb)
